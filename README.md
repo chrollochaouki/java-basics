@@ -1,1 +1,3 @@
+# LoopPractice
+
 Java learning exercises - loops and control flow practice.
