@@ -1,3 +1,3 @@
-# LoopPractice
+# java-basics
 
-Java learning exercises - loops and control flow practice.
+Java Phase 1 exercises - variables, loops, switch, methods, arrays and OOP.
