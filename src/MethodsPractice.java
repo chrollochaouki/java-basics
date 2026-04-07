@@ -18,6 +18,7 @@ public class MethodsPractice {
             return false;
            }
     }
+    //or return a % 2 == 0;
     public static int compare (int x, int z) {
         if (x>z){
             return x;
