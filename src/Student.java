@@ -1,40 +1,20 @@
-public class Student {
-
-    private String name;
-    private int age;
+public class Student extends Person {
     private double grade;
 
-    public String getName (){
-        return name;
-    }
-    public void setName (String name){
-        this.name = name;
-    }
-
-    public int getAge (){
-        return age;
-    }
-    public void setAge (int age){
-        this.age = age;
-    }
-
-    public double getGrade (){
-        return grade;
-    }
-    public void setGrade (double grade){
-        this.grade = grade;
-    }
-
-
     public Student(String name, int age, double grade) {
-        this.name = name;
-        this.age = age;
-        this.grade = grade;
+        super(name, age);   // Person handles name and age
+        this.grade = grade; // Student handles grade
     }
 
+    public double getGrade() { return grade; }
+    public void setGrade(double grade) { this.grade = grade; }
+
+    @Override
     public void displayInfo() {
-        System.out.println("Name: "+ this.name + " | Age: " + this.age + "|  Grade: " + this.grade );
+        super.displayInfo(); // calls Person's displayInfo
+        System.out.println("Grade: " + grade);
     }
+
     public boolean isPassing() {
         return grade >= 10;
     }
